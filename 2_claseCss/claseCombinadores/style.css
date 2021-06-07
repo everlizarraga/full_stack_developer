@@ -1,0 +1,7 @@
+/*Todas las etiquetas P que estean 
+dentro del DIV*/
+
+div p{
+    color: red;
+}
+
