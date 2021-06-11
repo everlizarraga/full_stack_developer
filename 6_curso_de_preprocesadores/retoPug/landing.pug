@@ -1,0 +1,12 @@
+extend componentes/plantilla.pug
+block main 
+    nav
+        h2.menu MENU
+        ul.nav 
+            each coso in menu 
+                li=coso
+    section.contenido
+        +caja('TITULO PRINCIPAL','Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti optio temporibus eligendi nostrum libero assumenda modi dolorum, atque necessitatibus culpa quidem quia facilis ipsa. Aut nisi cumque voluptates adipisci.','Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corrupti optio temporibus eligendi nostrum libero assumenda modi dolorum, atque necessitatibus culpa quidem quia facilis ipsa. Aut nisi cumque voluptates adipisci.')
+
+
+        
