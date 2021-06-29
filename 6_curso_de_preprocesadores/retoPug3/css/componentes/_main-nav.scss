@@ -1,0 +1,30 @@
+.main-nav {
+    width: 25%;
+    max-width: 300px;
+    padding: 0 15px;
+    padding-top: 60px;
+    background-color: $color-nav;
+    &__titulo {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        padding-left: 15px;
+    }
+    &__menu {
+        text-transform: uppercase;
+        @include font-size(14px);
+        li {
+            margin-top: 10px;
+            a{
+                width: 100%;
+                display: inline-block;
+                padding: 10px 15px;
+                color: $color-Font-oscuro;
+            }
+            a:hover {
+                background-color: $color-secundario;
+                color: $color-Font-claro;
+                border-radius: 10px;
+            }
+        }
+    }
+}

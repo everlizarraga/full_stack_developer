@@ -1,0 +1,11 @@
+main {
+    width: 100%;
+    max-width: 800px;
+    // margin: 0 auto;
+    align-self: center;
+    flex-grow: 1;
+    display: flex;
+}
+
+@import "./main-nav";
+@import "./main-section";

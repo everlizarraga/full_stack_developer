@@ -1,0 +1,23 @@
+header {
+    padding: 0 30px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primario;
+    .header__titulo {
+        text-transform: uppercase;
+        color: $color-Font-claro;
+        @include font-size(26px,1.2);
+    }
+    .header__boton {
+        border-radius: 10px;
+        @include boton;
+        @include font-size(14px,1.2);
+    }
+    .header__boton:hover {
+        background-color: white;
+        color: $color-secundario;
+    }
+}

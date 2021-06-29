@@ -1,0 +1,86 @@
+$color-primario: #8998C1;
+$color-secundario: #012178;
+$color-nav: #EEF1F8;
+$color-Font-claro: #F9FDF5;
+$color-Font-oscuro: #5868A0;
+$color-Font-black: black;
+
+@function calculateRem($size){
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+    line-height: calculateRem($size)*1.5;
+}
+
+@mixin botonXD {
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background-color: $color-secundario;
+    color: $color-Font-claro;
+}
+
+@mixin menu-hover {
+    background-color: $color-secundario;
+}
+
+@mixin caja{
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+    &__titulo{
+        text-transform: uppercase;
+        @include font-size(23px);
+    }
+    &__p1 {
+        margin-top: 10px;
+        text-align: justify;
+        @include font-size(16px);
+    }
+    &__p2 {
+        margin-top: 10px;
+        text-align: justify;
+        @include font-size(16px);
+    }
+    &__boton--circular {
+        margin-top: 15px;
+        display: inline-block;
+        border-radius: 0 10px 0 10px;
+        @include botonXD;
+        @include font-size(14px);
+    }
+    &__boton--circular:hover {
+        background-color: grey;
+        background: repeating-radial-gradient($color-secundario,$color-secundario 5px,white 5px, white 10px);
+    }
+    background: linear-gradient(to bottom left, $color-primario, white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-width: 500px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+

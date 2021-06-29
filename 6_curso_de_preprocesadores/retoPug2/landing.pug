@@ -1,0 +1,13 @@
+extend componentes/plantilla.pug
+
+block main 
+    nav 
+        h2 #{titulos[2]}
+        ul.nav 
+            each coso in menuNav 
+                li=coso
+    section
+        +caja(titulos[3],"Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officia temporibus ipsa eos perferendis magni adipisci consectetur itaque reprehenderit porro aliquam.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officia temporibus ipsa eos perferendis magni adipisci consectetur itaque reprehenderit porro aliquam, commodi nemo corrupti, soluta ea hic iure fuga expedita.")
+        +caja(titulos[3],"Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officia temporibus ipsa eos perferendis magni adipisci consectetur itaque reprehenderit porro aliquam.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officia temporibus ipsa eos perferendis magni adipisci consectetur itaque reprehenderit porro aliquam, commodi nemo corrupti, soluta ea hic iure fuga expedita.")
+        +caja(titulos[3],"Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officia temporibus ipsa eos perferendis magni adipisci consectetur itaque reprehenderit porro aliquam.","Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum officia temporibus ipsa eos perferendis magni adipisci consectetur itaque reprehenderit porro aliquam, commodi nemo corrupti, soluta ea hic iure fuga expedita.")
+        

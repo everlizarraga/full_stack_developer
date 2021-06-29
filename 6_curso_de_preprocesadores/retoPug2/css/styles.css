@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    color: #424242;
+}
+
+body {
+    width: 100%;
+    min-width: 500px;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.boton {
+    padding: 10px 20px;
+    background-color: #012178;
+    color: #FAFCFC;
+    border-radius: 0 10px 0 10px;
+}
+
+header {
+    width: 100%;
+    min-width: 500px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8998C1;
+}
+
+header h1 {
+    margin-left: 40px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #FAFCFC;
+}
+
+header .boton {
+    margin-right: 40px;
+    padding: 10px 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.boton:hover {
+    background-color: #363d52;
+}
+/* --------------------------------- */
+main {
+    width: 100%;
+    min-width: 500px;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    background-color: green;
+}
+
+nav {
+    width: 30%;
+    background-color: #EEF1F8;
+}
+
+nav h2 {
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+nav ul {
+    margin-left: 40px;
+}
+
+nav ul li {
+    margin: 25px 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #405184;
+    cursor: pointer;
+}
+
+section {
+    width: 70%;
+    padding: 0 40px;
+    padding-top: 40px;
+    background-color: #FFFFFF;
+}
+
+.caja {
+    padding-bottom: 40px;
+}
+
+.caja__titulo {
+    text-transform: uppercase;
+}
+
+.caja__texto {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.caja__boton {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+/* ------------------------------------ */
+footer {
+    width: 100%;
+    min-width: 500px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8998C1;
+}
+
+footer h2 {
+    margin-left: 40px;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #FAFCFC;
+}
+
+footer ul {
+    margin-right: 40px;
+}
+
+footer ul li {
+    display: inline-block;
+    text-transform: capitalize;
+    color: #FAFCFC;
+    padding: 5px 5px;
+}

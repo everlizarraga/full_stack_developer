@@ -1,0 +1,23 @@
+extend componentesHTML/plantilla.pug
+block main-container
+    nav.main-nav 
+        h2.main-nav__titulo #{titulos[2]}
+        ul.main-nav__menu
+            each coso in menu 
+                li 
+                    a(href="#")=coso
+    section.contenido-principal
+        section.cajas
+            +caja(titulos[3],"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. It has survived not only five centuries, but also the leap into electronic typesetting","It has survived not only five centuries, but also the leap into electronic typesetting,")
+            +caja(titulos[3],"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. It has survived not only five centuries, but also the leap into electronic typesetting","It has survived not only five centuries, but also the leap into electronic typesetting,")
+
+        section.bloques
+            .bloque
+            .bloque
+            .bloque
+            .bloque
+            .bloque
+            .bloque
+            .bloque
+            .bloque
+            .bloque

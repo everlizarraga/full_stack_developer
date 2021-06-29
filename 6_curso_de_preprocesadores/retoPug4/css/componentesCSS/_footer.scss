@@ -1,0 +1,31 @@
+.footer {
+    padding: 0 30px;
+    padding-right: 20px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primario;
+
+    &__titulo {
+        color: $color-Font-claro;
+        text-transform: uppercase;
+        @include font-size(25px,1.2);
+    }
+
+    &__nav {
+        li {
+            display: inline-block;
+            a {
+                padding: 5px 10px;
+                display: inline-block;
+                text-transform: capitalize;
+                color: $color-Font-claro;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

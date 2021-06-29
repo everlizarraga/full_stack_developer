@@ -1,0 +1,28 @@
+footer {
+    width: 100%;
+    height: 70px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primario;
+    .footer-title {
+        // margin-left: 30px;
+        color: $color-Font-claro;
+        text-transform: uppercase;
+        @include font-size(28px);
+    }
+    .footer-nav li{
+        display: inline-block;
+        text-transform: capitalize;
+        @include font-size(14px);
+        a {
+            display: inline-block;
+            padding: 10px 5px;
+            color: $color-Font-claro;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}

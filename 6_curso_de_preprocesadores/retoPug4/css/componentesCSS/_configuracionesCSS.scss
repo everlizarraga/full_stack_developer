@@ -1,0 +1,71 @@
+$color-primario: #8998c1;
+$color-secundario: #012178;
+$color-nav: #eef1f8;
+$color-Font-claro: #f9fdf5;
+$color-Font-oscuro: #5868a0;
+
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size,$separador) {
+    font-size: $size;
+    font-size: calculateRem($size);
+    line-height: calculateRem($size)*$separador;
+}
+
+@mixin boton {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: $color-Font-claro;
+    background-color: $color-secundario;
+}
+
+@mixin caja {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba($color: #0000, $alpha: .5);
+    &__titulo {
+        text-transform: uppercase;
+        @include font-size(18px, 1.2);
+    }
+    &__p1 {
+        padding-top: 10px;
+        text-align: justify;
+    }
+    &__p2 {
+        padding-top: 10px;
+        text-align: justify;
+    }
+    &__boton {
+        margin-top: 15px;
+        display: inline-block;
+        border-radius: 0 10px 0 10px;
+        @include boton;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

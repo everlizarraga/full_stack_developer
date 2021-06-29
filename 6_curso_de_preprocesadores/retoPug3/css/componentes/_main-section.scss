@@ -1,0 +1,8 @@
+.caja-content {
+    width: 75%;
+    padding: 0px 30px;
+    padding-top: 40px;
+    .caja {
+        @include caja;
+    }
+}

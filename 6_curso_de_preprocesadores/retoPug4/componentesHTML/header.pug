@@ -1,0 +1,6 @@
+header 
+    h1.header__titulo #{titulos[1]}
+    if usuario
+        a.boton.header__boton(href="#")=usuario
+    else
+        a.boton.header__boton(href="#") Registro
