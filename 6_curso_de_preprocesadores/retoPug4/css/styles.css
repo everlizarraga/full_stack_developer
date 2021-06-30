@@ -143,7 +143,9 @@ main .contenido-principal .cajas .caja__boton {
   background-color: #012178;
 }
 main .contenido-principal .bloques {
-  width: 100%;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,18 +154,52 @@ main .contenido-principal .bloques {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   background-color: #eef1f8;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 main .contenido-principal .bloques .bloque {
   margin: 5px;
   width: 80px;
   height: 80px;
   border-radius: 5px;
-  border: 1px solid black;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-main .contenido-principal .bloques .bloque:nth-child(even) {
-  background-color: red;
+main .contenido-principal .bloques .bloque:nth-child(1) {
+  background: linear-gradient(-45deg, white -10%, #012178);
+}
+main .contenido-principal .bloques .bloque:nth-child(2) {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, white), color-stop(160%, #012178));
+  background: linear-gradient(0deg, white 10%, #012178 160%);
+}
+main .contenido-principal .bloques .bloque:nth-child(3) {
+  background: linear-gradient(45deg, white -10%, #012178);
+}
+main .contenido-principal .bloques .bloque:nth-child(4) {
+  background: -webkit-gradient(linear, right top, left top, color-stop(10%, white), color-stop(160%, #012178));
+  background: linear-gradient(-90deg, white 10%, #012178 160%);
+}
+main .contenido-principal .bloques .bloque:nth-child(5) {
+  background-color: white;
+}
+main .contenido-principal .bloques .bloque:nth-child(6) {
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, white), color-stop(160%, #012178));
+  background: linear-gradient(90deg, white 10%, #012178 160%);
+}
+main .contenido-principal .bloques .bloque:nth-child(7) {
+  background: linear-gradient(-135deg, white -10%, #012178);
+}
+main .contenido-principal .bloques .bloque:nth-child(8) {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, white), color-stop(160%, #012178));
+  background: linear-gradient(180deg, white 10%, #012178 160%);
+}
+main .contenido-principal .bloques .bloque:nth-child(9) {
+  background: linear-gradient(135deg, white -10%, #012178);
 }
 main .contenido-principal .bloques .bloque:hover {
   border: 3px solid black;
