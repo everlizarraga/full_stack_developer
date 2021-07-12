@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  min-width: 500px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #8998C1;
+}
+header .header__titulo {
+  text-transform: uppercase;
+  color: #F9FDF5;
+}
+header .header__boton-usuario {
+  padding: 10px 20px;
+  padding-left: 35px;
+  color: white;
+  border: 1px solid #012178;
+  text-transform: uppercase;
+  background-color: #012178;
+  background-image: url(../../icons/dragon.png);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-size: 25px auto;
+  background-image: none;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+header .header__boton-usuario:hover {
+  border: 1px solid black;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+header .header__boton-usuario:active {
+  border: 1px solid white;
+}
+
+main {
+  margin: 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 700px;
+}
+
+.nav-container {
+  width: 30%;
+  padding: 0 30px;
+  padding-top: 40px;
+  background-color: #EEF1F8;
+}
+.nav-container .nav__titulo {
+  padding: 0 10px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.nav-container ul li {
+  display: block;
+}
+.nav-container ul li a {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 1px solid #EEF1F8;
+}
+.nav-container ul li a:hover {
+  background-color: #012178;
+  color: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.nav-container ul li a:active {
+  border: 1px solid black;
+}
+
+.contenido {
+  width: 70%;
+  padding: 30px;
+  padding-right: 0;
+}
+.contenido .cajas-container .caja {
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  padding-bottom: 0;
+  border-radius: 10px;
+}
+.contenido .cajas-container .caja .caja__titulo {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.contenido .cajas-container .caja .caja__p {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+.contenido .cajas-container .caja .caja__boton {
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  padding-left: 35px;
+  color: white;
+  border: 1px solid #012178;
+  text-transform: uppercase;
+  background-color: #012178;
+  background-image: url(../../icons/dragon.png);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  background-size: 25px auto;
+}
+.contenido .cajas-container .caja .caja__boton:hover {
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.contenido .cajas-container .caja .caja__boton:active {
+  border: 1px solid white;
+}
+.contenido .bloques-container {
+  max-width: 280px;
+  min-height: 270px;
+  margin: 0 auto;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #EEF1F8;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+.contenido .bloques-container .bloque {
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+.contenido .bloques-container .bloque:hover {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.contenido .bloques-container .bloque:active {
+  border: 2px solid black;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+.contenido .bloques-container :nth-child(1) {
+  background: linear-gradient(-10deg, #012178, black 180%);
+}
+.contenido .bloques-container :nth-child(2) {
+  background: -webkit-gradient(linear, left bottom, left top, from(#012178), color-stop(200%, black));
+  background: linear-gradient(0deg, #012178, black 200%);
+}
+.contenido .bloques-container :nth-child(3) {
+  background: linear-gradient(10deg, #012178, black 200%);
+}
+.contenido .bloques-container :nth-child(4) {
+  background: linear-gradient(-12deg, white -150%, #012178);
+}
+.contenido .bloques-container :nth-child(5) {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-160%, white), to(#012178));
+  background: linear-gradient(0deg, white -160%, #012178);
+}
+.contenido .bloques-container :nth-child(6) {
+  background: linear-gradient(12deg, white -150%, #012178);
+}
+.contenido .bloques-container :nth-child(7) {
+  background: linear-gradient(-25deg, white -100%, #012178 150%);
+}
+.contenido .bloques-container :nth-child(8) {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-90%, white), color-stop(170%, #012178));
+  background: linear-gradient(0deg, white -90%, #012178 170%);
+}
+.contenido .bloques-container :nth-child(9) {
+  background: linear-gradient(25deg, white -100%, #012178 150%);
+}
+.contenido .bloques-container :nth-child(10) {
+  background: linear-gradient(-35deg, white, #012178 150%);
+}
+.contenido .bloques-container :nth-child(11) {
+  background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(200%, #012178));
+  background: linear-gradient(0deg, white, #012178 200%);
+}
+.contenido .bloques-container :nth-child(12) {
+  background: linear-gradient(35deg, white, #012178 150%);
+}
+.contenido .bloques-container :nth-child(13) {
+  background-color: #EEF1F8;
+  background-image: url(../../icons/dragon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  padding: 0 30px;
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #8998C1;
+}
+footer .footer__titulo {
+  text-transform: uppercase;
+  color: #F9FDF5;
+}
+footer .footer__menu li {
+  display: inline-block;
+}
+footer .footer__menu li a {
+  display: inline-block;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: #F9FDF5;
+  border-radius: 10px;
+}
+footer .footer__menu li a:hover {
+  text-decoration: underline;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}

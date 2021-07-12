@@ -1,0 +1,111 @@
+:root {
+    --color-header-1: #1e5372;
+    --color-header-2: #1c3542;
+    --color-logo: #98ca3f;
+    --color-main: #f3f8fb;
+    --header-size-h: 100px;
+    --footer-size-h: 50px;
+    --main-size-h: calc(100vh - var(--header-size-h) - var(--footer-size-h));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-width: 450px;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+/* =========== HEADER ================== */
+.header-container {
+    width: 100%;
+    height: var(--header-size-h);
+    padding: 0 25px;
+    position: relative;
+    color: white;
+    background: linear-gradient(90deg,var(--color-header-2),var(--color-header-1));
+}
+
+.header__title {
+    height: 100%;
+    padding: calc(var(--header-size-h) / 2 - 16px) 0;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    display: inline-block;
+}
+
+.header__user {
+    height: 100%;
+    padding: calc(var(--header-size-h) / 2 - 8px) 20px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.header__user li {
+    padding: 0 10px;
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    cursor: pointer;
+}
+.header__user li:hover {
+    text-decoration: underline;
+}
+
+/* ============= MAIN =============== */
+
+main {
+    width: 100%;
+    height: calc(100vh - var(--header-size-h) - var(--footer-size-h));
+    background-color: var(--color-main);
+}
+
+main p {
+    position: relative;
+    top: calc(var(--main-size-h) / 2 - 25px);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+/* ============== FOOTER ============== */
+
+.footer-container {
+    width: 100%;
+    height: var(--footer-size-h);
+    color: white;
+    background: linear-gradient(90deg,var(--color-header-2),var(--color-header-1));
+}
+
+.footer__list {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__list li {
+    width: 33.3%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+.footer__list li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

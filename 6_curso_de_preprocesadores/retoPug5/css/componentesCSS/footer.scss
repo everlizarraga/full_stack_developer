@@ -1,0 +1,30 @@
+footer {
+    width: 100%;
+    height: 70px;
+    padding: 0 30px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primario;
+    .footer__titulo {
+        text-transform: uppercase;
+        color: $color-Font-claro;
+    }
+    .footer__menu {
+        li {
+            display: inline-block;
+            a {
+                display: inline-block;
+                padding: 5px 10px;
+                text-transform: uppercase;
+                color: $color-Font-claro;
+                border-radius: 10px;
+                &:hover {
+                    text-decoration: underline;
+                    box-shadow: 1px 1px 3px rgba($color: #000000, $alpha: 0.4);
+                }
+            }
+        }
+    }
+}

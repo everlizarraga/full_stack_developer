@@ -1,0 +1,26 @@
+header {
+    width: 100%;
+    height: 70px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-primario;
+    .header__titulo {
+        text-transform: uppercase;
+        color: $color-Font-claro;
+    }
+    .header__boton-usuario {
+        @include boton;
+        background-image: none;
+        padding-left: 20px;
+        border-radius: 10px;
+        &:hover {
+            border: 1px solid black;
+            box-shadow: 2px 2px 5px rgba($color: #000000, $alpha: 0.4);
+        }
+        &:active {
+            border: 1px solid white;
+        }
+    }
+}

@@ -1,0 +1,121 @@
+main {
+    margin: 0 auto;
+    flex-grow: 1;
+    display: flex;
+    max-width: 700px;
+}
+
+.nav-container {
+    width: 30%;
+    padding: 0 30px;
+    padding-top: 40px;
+    background-color: $color-nav;
+    .nav__titulo {
+        padding: 0 10px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    ul {
+        li {
+            display: block;
+            a {
+                width: 100%;
+                display: inline-block;
+                padding: 10px 10px;
+                text-transform: uppercase;
+                border-radius: 10px;
+                border: 1px solid $color-nav;
+                &:hover {
+                    background-color: $color-secundario;
+                    color: white;
+                    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+                }
+                &:active {
+                    border: 1px solid black;
+                }
+            }
+        }
+    }
+}
+
+.contenido {
+    width: 70%;
+    padding: 30px;
+    padding-right: 0;
+    .cajas-container {
+        .caja {
+            margin-bottom: 30px;
+            box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.5);
+            @include caja;
+        }
+    }
+    .bloques-container {
+        max-width: 280px;
+        min-height: 270px;
+        margin: 0 auto;
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        background-color: $color-nav;
+        box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.5);
+        border-radius: 20px;
+        .bloque {
+            cursor: pointer;
+            @include bloque;
+            &:hover {
+                box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.5);
+            }
+            &:active {
+                border: 2px solid black;
+                box-shadow: 0 0 15px rgba($color: #000000, $alpha: 0.6);
+            }
+        }
+        :nth-child(1) {
+            background: linear-gradient(-10deg,$color-secundario,black 180%);
+        }
+        :nth-child(2) {
+            background: linear-gradient(0deg,$color-secundario,black 200%);
+        }
+        :nth-child(3) {
+            background: linear-gradient(10deg,$color-secundario,black 200%);
+        }
+        :nth-child(4) {
+            background: linear-gradient(-12deg,white -150%,$color-secundario);
+        }
+        :nth-child(5) {
+            background: linear-gradient(0deg,white -160%,$color-secundario);
+        }
+        :nth-child(6) {
+            background: linear-gradient(12deg,white -150%,$color-secundario);
+        }
+        :nth-child(7) {
+            background: linear-gradient(-25deg,white -100%,$color-secundario 150%);
+        }
+        :nth-child(8) {
+            background: linear-gradient(0deg,white -90%,$color-secundario 170%);
+        }
+        :nth-child(9) {
+            background: linear-gradient(25deg,white -100%,$color-secundario 150%);
+        }
+        :nth-child(10) {
+            background: linear-gradient(-35deg,white,$color-secundario 150%);
+        }
+        :nth-child(11) {
+            background: linear-gradient(0deg,white,$color-secundario 200%);
+        }
+        :nth-child(12) {
+            background: linear-gradient(35deg,white,$color-secundario 150%);
+        }
+        :nth-child(13) {
+            // width: 100px;
+            background-color: $color-nav;
+            background-image: url(../../icons/dragon.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            // background-attachment: scroll;
+            background-size: contain;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+$color-primario: #8998C1;
+$color-secundario: #012178;
+$color-nav: #EEF1F8;
+$color-Font-claro: #F9FDF5;
+$color-Font-oscuro: #5868A0;
+$color-Font-black: black;
+
+@mixin caja {
+    padding: 30px;
+    padding-bottom: 0;
+    border-radius: 10px;
+    .caja__titulo {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .caja__p {
+        text-align: justify;
+        margin-bottom: 15px;
+    }
+    .caja__boton {
+        display: inline-block;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        @include boton;
+        &:hover {
+            box-shadow: 3px 3px 5px rgba($color: #000000, $alpha: 0.5);
+        }
+        &:active {
+            border: 1px solid white;
+        }
+    }
+}
+
+@mixin bloque {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgba($color: #000000, $alpha: 0.3);
+}
+
+@mixin boton {
+    padding: 10px 20px;
+    padding-left: 35px;
+    color: white;
+    border: 1px solid $color-secundario;
+    text-transform: uppercase;
+    background-color: $color-secundario;
+    background-image: url(../../icons/dragon.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 25px auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    min-width: 500px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
