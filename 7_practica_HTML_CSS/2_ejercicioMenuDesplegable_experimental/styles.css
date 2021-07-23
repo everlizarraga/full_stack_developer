@@ -1,0 +1,121 @@
+:root {
+    --color-claro-1: 244, 244, 242;
+    --color-claro-1-H: #F4F4F2;
+    --color-claro-2: 232, 232, 232;
+    --color-claro-2-H: #E8E8E8;
+    --color-oscuro-1: 187, 191, 202;
+    --color-oscuro-1-H: #BBBFCA;
+    --color-oscuro-2: 74, 85, 101;
+    --color-oscuro-2-H: #4A5565;
+    --header-size: 100px;
+    --footer-size: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-width: 450px;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+.header-container {
+    width: 100%;
+    height: var(--header-size);
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    background-color: rgba(var(--color-oscuro-1),1);
+}
+
+.header__logo {
+    width: 200px;
+    height: var(--header-size);
+    margin-left: 30px;
+    left: 0;
+    position: absolute;
+    background-image: url('https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.header__nav {
+    align-self: flex-end;
+    padding-right: 30px;
+}
+
+.header__nav > li {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.header__nav li{
+    font-weight: 600;
+    position: relative;
+    color: black;
+}
+
+.header__nav li a {
+    padding: 5px 10px;
+    display: block;
+}
+
+.header__nav li:hover {
+    background-color: rgba(var(--color-oscuro-2),0.9);
+    color: white;
+    cursor: pointer;
+}
+
+.header__nav li ul {
+    width: 120px;
+    position: absolute;
+    display: none;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    background-color: rgba(var(--color-oscuro-1),0.5);
+}
+
+.header__nav li:hover > ul {
+    display: block;
+}
+
+.header__nav li ul li ul {
+    left: -120px;
+    top: 0;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: calc(100vh - var(--footer-size) - var(--header-size));
+    background-color: var(--color-claro-2-H);
+}
+
+footer {
+    width: 100%;
+    height: var(--footer-size);
+    background-color: var(--color-oscuro-2-H);
+}
+
+

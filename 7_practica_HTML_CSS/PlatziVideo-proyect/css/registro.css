@@ -1,0 +1,148 @@
+:root {
+    --header-size: 100px;
+    --header-color: #21c08b;
+    --footer-size: 100px;
+    --footer-color: #8f57fd;
+    --main-size: calc(100vh - var(--header-size) - var(--footer-size));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.6rem;
+}
+
+.header {
+    width: 100%;
+    height: var(--header-size);
+    background-color: var(--header-color);
+    /* border: 1px solid black; */
+}
+
+.header__logo {
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+main {
+    width: 100%;
+    padding: 30px;
+    min-height: var(--main-size);
+    background: linear-gradient(0deg,var(--footer-color),var(--header-color));
+}
+
+.registro__container {
+    width: 350px;
+    padding: 70px 50px;
+    padding-top: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.registro__title {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    margin-bottom: 60px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 1.6rem;
+    outline: none;
+    border: 0px;
+    border-bottom: 2px solid white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+.input::placeholder {
+    font-size: 1.5rem;
+    opacity: 0.7;
+    color: white;
+}
+.input:focus {
+    background: linear-gradient(0deg,rgba(255,255,255,0.15),rgba(255,255,255,0) 80%);
+}
+
+.registro__form button {
+    width: 100%;
+    padding: 10px;
+    margin: 30px 0;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.registro__form button:active {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.log {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: white;
+}
+.log:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    width: 100%;
+    height: var(--footer-size);
+    background-color: var(--footer-color);
+    /* border: 1px solid black; */
+}
+
+.footer__list {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__list li {
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.footer__list li a {
+    padding: 5px;
+    display: block;
+    font-size: 1.6rem;
+    color: white;
+}
+.footer__list li a:hover {
+    text-decoration: underline;
+}

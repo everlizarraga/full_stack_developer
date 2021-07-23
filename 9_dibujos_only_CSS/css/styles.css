@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  padding: 0 0 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: black;
+}
+
+main {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.dibujosCSS-container {
+  width: 100%;
+  height: 400px;
+  background-color: royalblue;
+}
+.dibujosCSS-container .dibujosCSS {
+  width: 100%;
+  max-width: 700px;
+  min-width: 400px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid red;
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: #ed4042;
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado .head__cabeza {
+  width: 70px;
+  height: 140px;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-radius: 70px;
+  background-color: #f6c09c;
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado .neck__cuello {
+  width: 55px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -20px);
+          transform: translate(-50%, -20px);
+  opacity: 0.5;
+  background-color: #f6c09c;
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado .beard__barba {
+  width: 70px;
+  height: 85px;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30px);
+          transform: translate(-50%, -30px);
+  border-radius: 40px 40px 70px 70px;
+  background-color: #00243a;
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado .nose__nariz {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  -webkit-transform: translate(-50%, 77px);
+          transform: translate(-50%, 77px);
+  border-radius: 50%;
+  background-color: #f6c09c;
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado .ears {
+  width: 90px;
+  height: 15px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 70px);
+          transform: translate(-50%, 70px);
+  opacity: 0.7;
+  border-radius: 50px;
+  border: 5px solid #f6c09c;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado .eye--left {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  -webkit-transform: translate(-90%, 60px);
+          transform: translate(-90%, 60px);
+  border-radius: 50%;
+  background-color: #fff;
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado .eye--right {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  -webkit-transform: translate(-10%, 60px);
+          transform: translate(-10%, 60px);
+  border-radius: 50%;
+  background-color: #fff;
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado .eyebrow__cejas {
+  width: 70px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 55px);
+          transform: translate(-50%, 55px);
+  z-index: 2;
+  background-color: #f6c09c;
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado .pto--left {
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  -webkit-transform: translate(-9px, 68px);
+          transform: translate(-9px, 68px);
+  border-radius: 50%;
+  background-color: black;
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado .pto--right {
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  -webkit-transform: translate(7px, 68px);
+          transform: translate(7px, 68px);
+  border-radius: 50%;
+  background-color: black;
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado .mouth__boca {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: 88px;
+  -webkit-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  border-radius: 0 0 50% 50%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #680524), color-stop(51%, rgba(104, 5, 36, 0)));
+  background: linear-gradient(0deg, #680524 50%, rgba(104, 5, 36, 0) 51%);
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado .teeth {
+  width: 28px;
+  height: 5px;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: 106px;
+  -webkit-transform: translate(-18px, 0);
+          transform: translate(-18px, 0);
+  border-radius: 0 2px 5px 5px;
+  background-color: white;
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado .lengua {
+  width: 15px;
+  height: 8px;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  top: 114px;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  border-radius: 0 3px 0 10px;
+  background-color: #ed2860;
+}
+.dibujosCSS-container .dibujosCSS #dibujosCSS__1-pelado .mouth__boca-container {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 35px;
+  height: 18px;
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 100px;
+  -webkit-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+  border-radius: 0 0 50px 50px;
+  background: rgba(0, 0, 0, 0);
+  border: 3px solid #00243a;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: black;
+}
