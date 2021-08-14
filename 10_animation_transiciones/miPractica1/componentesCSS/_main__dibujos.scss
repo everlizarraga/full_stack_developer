@@ -1,0 +1,50 @@
+.main__dibujos {
+    width: 100%;
+    min-height: 100px;
+    position: relative;
+    padding: 30px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    // background-color: indigo;
+    background-color: #523CA0;
+
+    h2 {
+        position: absolute;
+        padding: 10px 0;
+        // margin: 0 auto;
+        top: 15px;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.5);
+    }
+
+    article {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+    }
+}
+
+@import "./dibujosCSS/reto-1.scss"; // 100x150
+.main__dibujos .reto-1 {
+    // width: 300px;
+    // height: ;
+    .dibujo-container{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@import "./dibujosCSS/reto-2"; // 100x150
+.main__dibujos .reto-2 {
+    .dibujo-container {
+        width: 100%;
+        height: 100%;
+    }
+}

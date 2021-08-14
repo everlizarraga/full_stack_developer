@@ -1,0 +1,18 @@
+.main-container {
+    width: 100%;
+    flex-grow: 1;
+    background-color: $color-tertiary;
+}
+
+.main {
+    width: 70%;
+    min-width: 300px;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+@import "./main__ficheros.scss";
+@import "./main__celu.scss";
+@import "./main__dibujos.scss";
+

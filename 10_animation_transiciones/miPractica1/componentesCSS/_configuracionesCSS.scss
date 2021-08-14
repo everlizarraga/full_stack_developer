@@ -1,0 +1,66 @@
+$color-primary: #1D3744;
+$color-secundary: #1E5372;
+$color-tertiary: #121F3D;
+$color-comentario: #24385B;
+$color-platzi: #91C93C;
+
+@function sizeRem($size) {
+    $coso: $size / 16px;
+    @return $coso * 1rem;
+}
+
+@mixin font-size ($size, $altura) {
+    font-size: $size;
+    font-size: sizeRem($size);
+    line-height: sizeRem($size) * $altura;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.logo-main {
+    width: 200px;
+    height: 50px;
+    background-image: url('./iconos/logo-platzi-video-BW2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.boton {
+    width: 120px;
+    height: 36px;
+    display: block;
+    padding: 10px 10px;
+    padding-left: 35px;
+    @include font-size(16px, 1);
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
+    background-color: $color-secundary;
+
+    background-image: url('./iconos/platzi-logo-icono.png');
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 8px center;
+}
