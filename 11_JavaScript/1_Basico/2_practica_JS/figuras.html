@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./figuras.css">
+    <title>Figuras Geométricas</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Figuras Geométricas</h1>
+        <p class="header__description">Este es el primer taller del curso práctico de JavaScript</p>
+    </header>
+    <main class="main-container">
+        <section class="cuadrado-container">
+            <h2 class="cuadrado__title">Cuadrardo</h2>
+            <form action="" class="cuadrado__form">
+                <label for="inputCuadrado" class="form__label--lado">Lado:</label>
+                <input id="inputCuadrado" type="number" class="form__input--lado">
+                <button type="button" onclick="calcularPerimetroCuadrado()" class="form__boton--perimetro">Calcular perímetro</button>
+                <button type="button" onclick="calcularAreaCuadrado()" class="form__boton--area">Calcular área</button>
+            </form>
+        </section>
+        <section class="triangulo-container">
+            <h2 class="triangulo__title" onclick="reto1Triangulo()">Triángulo</h2>
+            <form action="" class="triangulo__form">
+                <label for="input--lado1" class="form__label--lado lado1">1er Lado:</label>
+                <input type="number" id="input--lado1" class="form__input--lado lado1">
+                <label for="input--lado2" class="form__label--lado lado2">2do Lado:</label>
+                <input type="number" id="input--lado2" class="form__input--lado lado2">
+                <label for="input--lado3" class="form__label--lado lado3">3er Lado:</label>
+                <input type="number" id="input--lado3" class="form__input--lado lado3">
+                <button type="button" class="form__boton--perimetro" onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
+                <button type="button" class="form__boton--area" onclick="calcularAreaTriangulo()">Calcular área</button>
+            </form>
+        </section>
+        <section class="circulo-container">
+            <h2 class="circulo__title">Círculo</h2>
+            <form action="" class="circulo__form">
+                <label for="input--radio" class="form__label--radio">Radio:</label>
+                <input type="number" id="input--radio" class="form__input--radio form__input--lado">
+                <button type="button" class="form__boton--perimetro" onclick="calcularPerimetroCirculo()">Calcular perimetro</button>
+                <button type="button" class="form__boton--area" onclick="calcularAreaCirculo()">Calcular área</button>
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+    <!-- <script src="./figuras.js"></script> -->
+    <script src="./figuras2.js"></script>
+</body>
+</html>

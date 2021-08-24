@@ -1,0 +1,281 @@
+:root {
+    --color--primary: #181818;
+    --color--secundary: #152337;
+    --color--tertiary: #2E5183;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    min-width: 300px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+/* ========================================= */
+/*                  HEADER                   */
+/* ========================================= */
+
+header {
+    width: 100%;
+    min-height: 100px;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(180deg, var(--color--primary), var(--color--secundary));
+}
+
+.header__title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 3.4rem;
+}
+
+.header__description {
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+/* ========================================= */
+/*                  MAIN                     */
+/* ========================================= */
+
+main {
+    width: 100%;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    background-color: var(--color--tertiary);
+}
+
+section {
+    width: 250px;
+    max-width: 400px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    /* border: 1px solid red; */
+}
+
+/* --------- Cuadrado ----------- */
+.cuadrado-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+.cuadrado__title {
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.cuadrado__title::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,50px);
+    cursor: pointer;
+    background-color: var(--color--primary);
+    box-shadow: 0 0 5px white;
+}
+.cuadrado__form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 25px repeat(2,1fr);
+}
+.cuadrado__form .form__label--lado {
+    justify-self: left;
+    align-self: center;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.cuadrado__form .form__input--lado {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 2px 10px;
+    align-self: center;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.form__boton--perimetro {
+    grid-column: 1/ span 2;
+}
+.form__boton--area {
+    grid-column: 1/ span 2;
+}
+.cuadrado__form button {
+    margin: 3px 0px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: red; */
+}
+
+/* ------------- Triángulo ---------- */
+.triangulo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+.triangulo__title {
+    position: relative;
+    text-align: center;
+}
+.triangulo__title::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,40px);
+    cursor: pointer;
+    background: linear-gradient(112deg,transparent 50%,rgba(255,255,255,0.5) 50%,var(--color--primary) 56%) -15px 0, linear-gradient(66deg,var(--color--primary) 50%, transparent 50%) 25px 0;
+    background-size: 40px 80px;
+    background-repeat: no-repeat;
+}
+.triangulo__form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 25px 25px 25px repeat(2,1fr);
+}
+.triangulo__form .form__label--lado {
+    width: 80px;
+    justify-self: left;
+    align-self: center;
+    margin-left: 10px;
+}
+.triangulo__form .form__input--lado {
+    width: 100%;
+    padding: 2px 10px;
+    align-self: center;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.triangulo__form button {
+    margin: 3px 0px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* -------------- Círculo ----------- */
+.circulo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+.circulo__title {
+    position: relative;
+    text-align: center;
+}
+.circulo__title::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,50px);
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    background-color: var(--color--primary);
+}
+.circulo__form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 25px repeat(2,1fr);
+}
+.circulo__form .form__label--radio {
+    justify-self: left;
+    align-self: center;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.circulo__form .form__input--radio {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 2px 10px;
+    align-self: center;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.circulo__form button {
+    margin: 3px 0px;
+    padding: 10px 5px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* -------------------------------- */
+.form__input--lado {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.form__input--lado:focus {
+    box-shadow: 0 0 3px black;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+button {
+    cursor: pointer;
+    opacity: 0.7;
+}
+button:hover {
+    opacity: 1;
+}
+
+/* ========================================= */
+/*                  FOOTER                   */
+/* ========================================= */
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: var(--color--primary);
+}
